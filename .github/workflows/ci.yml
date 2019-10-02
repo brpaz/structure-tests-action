@@ -13,7 +13,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v1
-      - uses: brpaz/hadolint@master
+      - uses: brpaz/hadolint-action@master
   build:
     runs-on: ubuntu-latest
     needs: ['lint']
