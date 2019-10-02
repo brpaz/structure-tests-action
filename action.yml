@@ -1,4 +1,4 @@
-name: 'structure-tests-action'
+name: 'Container Structure Tests'
 description: |
   Action that leverages Google´s Container Structure test
   to run unit tests on your container images'
