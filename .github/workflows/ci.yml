@@ -11,12 +11,9 @@ env:
 jobs:
   lint:
     runs-on: ubuntu-latest
-    container: pipelinecomponents/hadolint:latest
     steps:
       - uses: actions/checkout@v1
-      - name: Run hadolint
-        run: hadolint Dockerfile
-
+      - uses: brpaz/hadolint@master
   build:
     runs-on: ubuntu-latest
     needs: ['lint']
