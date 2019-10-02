@@ -1,5 +1,7 @@
 name: 'structure-tests-action'
-description: ' Action that leverages Google´s Container Structure test to run unit tests on your container images'
+description: |
+  Action that leverages Google´s Container Structure test
+  to run unit tests on your container images'
 author: 'Bruno Paz'
 inputs:
   image:

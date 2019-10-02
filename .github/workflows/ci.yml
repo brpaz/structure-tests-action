@@ -26,7 +26,7 @@ jobs:
         run: docker build -t $TEST_IMAGE_NAME .
 
       - name: Save Docker image artifact
-        run:  docker save -o action.tar $TEST_IMAGE_NAME
+        run: docker save -o action.tar $TEST_IMAGE_NAME
 
       - name: Upload image artifact
         uses: actions/upload-artifact@master
@@ -69,4 +69,3 @@ jobs:
         uses: brpaz/action-semantic-release@v1
         env:
           GITHUB_TOKEN: ${{secrets.GITHUB_TOKEN}}
-

@@ -1,8 +1,11 @@
 
 IMAGE_NAME:=structure-tests-action
 
-lint: ## Runs hadoint against application dockerfile
+lint-dockerfile: ## Runs hadoint against application dockerfile
 	@docker run --rm -v "$(PWD):/data" -w "/data" hadolint/hadolint hadolint Dockerfile
+
+lint-yaml: ## Lints yaml configurations
+	@docker run --rm -v "$(PWD):/yaml" sdesbure/yamllint yamllint .
 
 build: ## Builds the docker image
 	@docker build . -t $(IMAGE_NAME)
