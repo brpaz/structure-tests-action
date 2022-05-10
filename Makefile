@@ -13,7 +13,7 @@ build: ## Builds the docker image
 test: build ## Runs a test in the image
 	@docker run -i --rm \
   -v /var/run/docker.sock:/var/run/docker.sock \
-  -v ${PWD}:/test zemanlx/container-structure-test:v1.8.0-alpine \
+  -v ${PWD}:/test zemanlx/container-structure-test:v1.9.1-alpine \
     test \
     --image $(IMAGE_NAME) \
     --config test/structure-tests.yaml
