@@ -1,6 +1,6 @@
-FROM alpine:3.10
+FROM alpine:3.15
 
-ARG STRUCTURE_TEST_VERSION=1.8.0
+ARG STRUCTURE_TEST_VERSION=1.11.0
 
 RUN apk add --no-cache curl~=7 git~=2
 
