@@ -5,8 +5,6 @@
 [![GitHub Action](https://img.shields.io/badge/GitHub-Action-blue?style=for-the-badge)](https://github.com/features/actions)
 [![License](https://img.shields.io/badge/License-MIT-yellow.svg?style=for-the-badge)](LICENSE)
 [![Commitizen friendly](https://img.shields.io/badge/commitizen-friendly-brightgreen.svg?style=for-the-badge)](http://commitizen.github.io/cz-cli/)
-[![semantic-release](https://img.shields.io/badge/%20%20%F0%9F%93%A6%F0%9F%9A%80-semantic--release-e10079.svg?style=for-the-badge)](https://github.com/semantic-release/semantic-release?style=for-the-badge)
-
 [![GitHub Actions](https://github.com/brpaz/structure-tests-action/workflows/CI/badge.svg?style=for-the-badge)](https://github.com/brpaz/structure-tests-action/actions)
 
 
@@ -33,48 +31,21 @@ steps:
 
 ## 🤝 Contributing
 
-Contributions are what make the open source community such an amazing place to be learn, inspire, and create. Any contributions you make are **greatly appreciated**.
+Check [CONTRIBUTING.md](CONTRIBUTING.md) for details.
 
-1. Fork the Project
-2. Create your Feature Branch (`git checkout -b feature/AmazingFeature`)
-3. Commit your Changes (`git commit -m 'Add some AmazingFeature'`)
-4. Push to the Branch (`git push origin feature/AmazingFeature`)
-5. Open a Pull Request
+## 🫶 Support
 
-## Useful Resources
+If you find this project helpful and would like to support its development, there are a few ways you can contribute:
 
-* [Building actions - GitHub Help](https://help.github.com/en/articles/building-actions)
-* [actions/toolkit: The GitHub ToolKit for developing GitHub Actions.](https://github.com/actions/toolkit)
+[![Sponsor me on GitHub](https://img.shields.io/badge/Sponsor-%E2%9D%A4-%23db61a2.svg?&logo=github&logoColor=red&&style=for-the-badge&labelColor=white)](https://github.com/sponsors/brpaz)
 
-## FAQ
-
-<details>
-<summary> How can I use an envrionment variable as input</summary>
-<p>
-
-Using Environment variables directly as input arguments is not supported by GitHub Actions.
-You can define an intermidiate step that outputs the desired value and use that value as the input
-
-```yaml
-- name: Get Image name
-  id: image_name
-  run: echo "##[set-output name=image;]$(echo $TEST_IMAGE_NAME)"
-```
-
-And then use it as input:
-
-```sh
-image: ${{steps.image_name.outputs.image}}
-```
-
-</p>
-</details>  
+<a href="https://www.buymeacoffee.com/Z1Bu6asGV" target="_blank"><img src="https://www.buymeacoffee.com/assets/img/custom_images/orange_img.png" alt="Buy Me A Coffee" style="height: auto !important;width: auto !important;" ></a>
 
 ## Author
 
 👤 **Bruno Paz**
 
-* authorWebsite: [https://github.com/brpaz](https://github.com/brpaz)
+* Website: [https://github.com/brpaz](https://github.com/brpaz)
 * Github: [@brpaz](https://github.com/brpaz)
 
 ## 📝 License

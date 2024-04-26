@@ -1,0 +1,29 @@
+version: "3"
+
+env:
+  TEST_IMAGE_TAG: "action-structure-tests:dev"
+
+tasks:
+  default:
+    cmds:
+      - task -l
+
+  lint:
+    desc: "Runs hadolint against application dockerfile"
+    cmds:
+      - hadolint Dockerfile
+
+  build:
+    desc: "Builds the docker image"
+    cmds:
+      - docker build . -t {{ .TEST_IMAGE_TAG }}
+
+  test:
+    desc: "Runs a test in the image"
+    deps:
+      - build
+    cmds:
+      - |
+        container-structure-test test  \
+          --image {{ .TEST_IMAGE_TAG }} \
+          --config structure-tests.yaml
