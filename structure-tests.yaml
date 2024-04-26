@@ -8,4 +8,4 @@ commandTests:
     command: container-structure-test
     args: [version]
     exitCode: 0
-    expectedOutput: ["v1.14.0"]
+    expectedOutput: ["v1.16.0"]
