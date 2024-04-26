@@ -42,6 +42,13 @@ jobs:
           load: true
           tags: ${{ env.TEST_IMAGE_TAG }}
 
+      - name: Install container-structure-test
+        run: |
+          curl -LO https://github.com/GoogleContainerTools/container-structure-test/releases/download/v1.17.0 \
+          && chmod +x container-structure-test-linux-amd64 \
+          && mv container-structure-test-linux-amd64 /usr/local/bin/container-structure-test \
+          && container-structure-test version
+
       - name: Run tests
         run: |
           container-structure-test test \
