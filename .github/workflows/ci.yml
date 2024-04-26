@@ -53,4 +53,4 @@ jobs:
         run: |
           container-structure-test test \
             --image ${{ env.TEST_IMAGE_TAG }} \
-            --config structure-test.yaml
+            --config structure-tests.yaml
