@@ -1,12 +1,15 @@
-FROM alpine:3.15
+FROM alpine:3.19
 
-ARG STRUCTURE_TEST_VERSION=1.11.0
+ARG STRUCTURE_TEST_VERSION=1.17.0
+ENV STRUCTURE_TEST_VERSION=${STRUCTURE_TEST_VERSION}
+ENV DOWNLOAD_URL=https://github.com/GoogleContainerTools/container-structure-test/releases/download/v${STRUCTURE_TEST_VERSION}/container-structure-test-linux-amd64
 
-RUN apk add --no-cache curl~=7 git~=2
+RUN apk add --no-cache curl
 
-RUN curl -LO https://storage.googleapis.com/container-structure-test/v$STRUCTURE_TEST_VERSION/container-structure-test-linux-amd64 && chmod +x container-structure-test-linux-amd64 && mv container-structure-test-linux-amd64 /usr/local/bin/container-structure-test
-
-COPY LICENSE README.md /
+RUN curl -LO ${DOWNLOAD_URL} \
+    && chmod +x container-structure-test-linux-amd64 \
+    && mv container-structure-test-linux-amd64 /usr/local/bin/container-structure-test \
+    && container-structure-test version
 
 COPY entrypoint.sh /entrypoint.sh
 

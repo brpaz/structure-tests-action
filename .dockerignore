@@ -1,0 +1,14 @@
+.github
+.devcontainer
+.vscode
+.lefthook
+.commitlintrc.json
+.editorconfig
+.envrc
+.env
+.hadolint.yaml
+CONTRIBUTING.md
+Dockerfile
+lefthook.yaml
+structure-tests.yaml
+Taskfile.yml

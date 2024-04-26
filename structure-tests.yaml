@@ -1,11 +1,11 @@
 schemaVersion: 2.0.0
 
 metadataTest:
-  entrypoint: ['/entrypoint.sh']
+  entrypoint: ["/entrypoint.sh"]
 
 commandTests:
   - name: "Check Container structure test is installed"
     command: container-structure-test
     args: [version]
     exitCode: 0
-    expectedOutput: ["v1.11.0"]
+    expectedOutput: ["v1.17.0"]

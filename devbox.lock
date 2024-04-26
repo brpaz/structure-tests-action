@@ -1,0 +1,197 @@
+{
+  "lockfile_version": "1",
+  "packages": {
+    "commitlint@19.2.0": {
+      "last_modified": "2024-04-19T17:36:04-04:00",
+      "resolved": "github:NixOS/nixpkgs/92d295f588631b0db2da509f381b4fb1e74173c5#commitlint",
+      "source": "devbox-search",
+      "version": "19.2.0",
+      "systems": {
+        "aarch64-darwin": {
+          "outputs": [
+            {
+              "name": "out",
+              "path": "/nix/store/pjv1aqyf4ji9wm13l0rr7mrpplx8lww0-_at_commitlint_slash_cli-19.2.0",
+              "default": true
+            }
+          ],
+          "store_path": "/nix/store/pjv1aqyf4ji9wm13l0rr7mrpplx8lww0-_at_commitlint_slash_cli-19.2.0"
+        },
+        "aarch64-linux": {
+          "outputs": [
+            {
+              "name": "out",
+              "path": "/nix/store/salaps1x6wc9r5alih2yg93zaqmmzxrj-_at_commitlint_slash_cli-19.2.0",
+              "default": true
+            }
+          ],
+          "store_path": "/nix/store/salaps1x6wc9r5alih2yg93zaqmmzxrj-_at_commitlint_slash_cli-19.2.0"
+        },
+        "x86_64-darwin": {
+          "outputs": [
+            {
+              "name": "out",
+              "path": "/nix/store/33ya418shkk9vjnd9pp1x3k41x5f2888-_at_commitlint_slash_cli-19.2.0",
+              "default": true
+            }
+          ],
+          "store_path": "/nix/store/33ya418shkk9vjnd9pp1x3k41x5f2888-_at_commitlint_slash_cli-19.2.0"
+        },
+        "x86_64-linux": {
+          "outputs": [
+            {
+              "name": "out",
+              "path": "/nix/store/ycq2afp079gcdf2p3yn7w0g58yxlxbax-_at_commitlint_slash_cli-19.2.0",
+              "default": true
+            }
+          ],
+          "store_path": "/nix/store/ycq2afp079gcdf2p3yn7w0g58yxlxbax-_at_commitlint_slash_cli-19.2.0"
+        }
+      }
+    },
+    "go-task@3.36.0": {
+      "last_modified": "2024-04-19T17:36:04-04:00",
+      "resolved": "github:NixOS/nixpkgs/92d295f588631b0db2da509f381b4fb1e74173c5#go-task",
+      "source": "devbox-search",
+      "version": "3.36.0",
+      "systems": {
+        "aarch64-darwin": {
+          "outputs": [
+            {
+              "name": "out",
+              "path": "/nix/store/s7999mjjjkan5fi20csad6pxha0pcn9m-go-task-3.36.0",
+              "default": true
+            }
+          ],
+          "store_path": "/nix/store/s7999mjjjkan5fi20csad6pxha0pcn9m-go-task-3.36.0"
+        },
+        "aarch64-linux": {
+          "outputs": [
+            {
+              "name": "out",
+              "path": "/nix/store/pf3rrjy7d7hl9b9qrlqfs7r0dp1c9gl2-go-task-3.36.0",
+              "default": true
+            }
+          ],
+          "store_path": "/nix/store/pf3rrjy7d7hl9b9qrlqfs7r0dp1c9gl2-go-task-3.36.0"
+        },
+        "x86_64-darwin": {
+          "outputs": [
+            {
+              "name": "out",
+              "path": "/nix/store/crv84dwq688wdwlw165b52yk8zshs3zz-go-task-3.36.0",
+              "default": true
+            }
+          ],
+          "store_path": "/nix/store/crv84dwq688wdwlw165b52yk8zshs3zz-go-task-3.36.0"
+        },
+        "x86_64-linux": {
+          "outputs": [
+            {
+              "name": "out",
+              "path": "/nix/store/g1chzl549g4jzjpaqc1i2d0hbazkhx5l-go-task-3.36.0",
+              "default": true
+            }
+          ],
+          "store_path": "/nix/store/g1chzl549g4jzjpaqc1i2d0hbazkhx5l-go-task-3.36.0"
+        }
+      }
+    },
+    "hadolint@2.12.0": {
+      "last_modified": "2024-04-19T17:36:04-04:00",
+      "resolved": "github:NixOS/nixpkgs/92d295f588631b0db2da509f381b4fb1e74173c5#hadolint",
+      "source": "devbox-search",
+      "version": "2.12.0",
+      "systems": {
+        "aarch64-darwin": {
+          "outputs": [
+            {
+              "name": "out",
+              "path": "/nix/store/4ms8mv7xgwdxsg7n9829kzcm2g6dqsci-hadolint-2.12.0",
+              "default": true
+            }
+          ],
+          "store_path": "/nix/store/4ms8mv7xgwdxsg7n9829kzcm2g6dqsci-hadolint-2.12.0"
+        },
+        "aarch64-linux": {
+          "outputs": [
+            {
+              "name": "out",
+              "path": "/nix/store/0qa29xzhgxx7zff6xllym5vdfj2qrbxs-hadolint-2.12.0",
+              "default": true
+            }
+          ],
+          "store_path": "/nix/store/0qa29xzhgxx7zff6xllym5vdfj2qrbxs-hadolint-2.12.0"
+        },
+        "x86_64-darwin": {
+          "outputs": [
+            {
+              "name": "out",
+              "path": "/nix/store/nav0w98y70jj9l33ak4ql0ifn0zhxhcg-hadolint-2.12.0",
+              "default": true
+            }
+          ],
+          "store_path": "/nix/store/nav0w98y70jj9l33ak4ql0ifn0zhxhcg-hadolint-2.12.0"
+        },
+        "x86_64-linux": {
+          "outputs": [
+            {
+              "name": "out",
+              "path": "/nix/store/jf4qh06cr6qfrya74pfj9jckj679wvh0-hadolint-2.12.0",
+              "default": true
+            }
+          ],
+          "store_path": "/nix/store/jf4qh06cr6qfrya74pfj9jckj679wvh0-hadolint-2.12.0"
+        }
+      }
+    },
+    "lefthook@1.6.1": {
+      "last_modified": "2024-04-19T17:36:04-04:00",
+      "resolved": "github:NixOS/nixpkgs/92d295f588631b0db2da509f381b4fb1e74173c5#lefthook",
+      "source": "devbox-search",
+      "version": "1.6.10",
+      "systems": {
+        "aarch64-darwin": {
+          "outputs": [
+            {
+              "name": "out",
+              "path": "/nix/store/rcc1145skrkam515r8c7y858fjmpqd1a-lefthook-1.6.10",
+              "default": true
+            }
+          ],
+          "store_path": "/nix/store/rcc1145skrkam515r8c7y858fjmpqd1a-lefthook-1.6.10"
+        },
+        "aarch64-linux": {
+          "outputs": [
+            {
+              "name": "out",
+              "path": "/nix/store/yg94l16sf0vmbc0w44axdnnq39h14i28-lefthook-1.6.10",
+              "default": true
+            }
+          ],
+          "store_path": "/nix/store/yg94l16sf0vmbc0w44axdnnq39h14i28-lefthook-1.6.10"
+        },
+        "x86_64-darwin": {
+          "outputs": [
+            {
+              "name": "out",
+              "path": "/nix/store/dpblwbiynqp0zxbsxk78vy6masjdys27-lefthook-1.6.10",
+              "default": true
+            }
+          ],
+          "store_path": "/nix/store/dpblwbiynqp0zxbsxk78vy6masjdys27-lefthook-1.6.10"
+        },
+        "x86_64-linux": {
+          "outputs": [
+            {
+              "name": "out",
+              "path": "/nix/store/x5g93raw3xyyndr5mj9z1qmc8isgmj8h-lefthook-1.6.10",
+              "default": true
+            }
+          ],
+          "store_path": "/nix/store/x5g93raw3xyyndr5mj9z1qmc8isgmj8h-lefthook-1.6.10"
+        }
+      }
+    }
+  }
+}
