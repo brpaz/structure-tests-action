@@ -10,12 +10,48 @@
 
 ## Usage
 
+### Basic usage
+
 ```yml
 steps:
-    uses: brpaz/structure-tests-action@v1
+    uses: brpaz/structure-tests-action@1.3.0
     with:
         image: myimage:latest
         configFile: structure-tests.yaml
+```
+
+### With Docker Actions
+
+```yaml
+env:
+  TEST_IMAGE_TAG: image:${{ github.sha }}
+jobs:
+    test:
+        name: Test
+        runs-on: ubuntu-latest
+        needs: [lint]
+        steps:
+        - name: Checkout
+            uses: actions/checkout@v4
+
+        - name: Set up QEMU
+            uses: docker/setup-qemu-action@v3
+
+        - name: Set up Docker Buildx
+            uses: docker/setup-buildx-action@v3
+
+        - name: Build test image
+            uses: docker/build-push-action@v5
+            with:
+            context: .
+            load: true
+            tags: ${{ env.TEST_IMAGE_TAG }}
+
+        - name: Test
+            uses: brpaz/structure-tests-action@1.3.0
+            with:
+            image: ${{ env.TEST_IMAGE_TAG }}
+            configFile: structure-tests.yaml
 ```
 
 ## Inputs
