@@ -11,4 +11,6 @@ pre-commit:
       run: task lint
 
 commit-msg:
-  run: commitlint-rs
+  commands:
+    lint-commit-msg:
+      run: commitlint
