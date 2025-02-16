@@ -1,6 +1,6 @@
-FROM alpine:3.19
+FROM alpine:3.21.3
 
-ARG STRUCTURE_TEST_VERSION=1.17.0
+ARG STRUCTURE_TEST_VERSION=1.19.3
 ENV STRUCTURE_TEST_VERSION=${STRUCTURE_TEST_VERSION}
 ENV DOWNLOAD_URL=https://github.com/GoogleContainerTools/container-structure-test/releases/download/v${STRUCTURE_TEST_VERSION}/container-structure-test-linux-amd64
 

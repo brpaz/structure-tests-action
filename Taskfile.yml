@@ -1,7 +1,7 @@
 version: "3"
 
 env:
-  TEST_IMAGE_TAG: "action-structure-tests:dev"
+  TEST_IMAGE_TAG: "action-structure-tests:local-dev"
 
 tasks:
   default:

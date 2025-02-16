@@ -5,7 +5,7 @@
 [![GitHub Action](https://img.shields.io/badge/GitHub-Action-blue?style=for-the-badge)](https://github.com/features/actions)
 [![License](https://img.shields.io/badge/License-MIT-yellow.svg?style=for-the-badge)](LICENSE)
 [![Commitizen friendly](https://img.shields.io/badge/commitizen-friendly-brightgreen.svg?style=for-the-badge)](http://commitizen.github.io/cz-cli/)
-[![GitHub Actions](https://github.com/brpaz/structure-tests-action/workflows/CI/badge.svg?style=for-the-badge)](https://github.com/brpaz/structure-tests-action/actions)
+[![CI Status](https://github.com/brpaz/structure-tests-action/workflows/CI/badge.svg?style=for-the-badge)](https://github.com/brpaz/structure-tests-action/actions)
 
 
 ## Usage
