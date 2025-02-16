@@ -43,7 +43,7 @@ jobs:
           tags: ${{ env.TEST_IMAGE_TAG }}
 
       - name: Test
-        uses: ./.github/actions/structure-tests
+        uses: ./
         with:
           image: ${{ env.TEST_IMAGE_TAG }}
           configFile: structure-tests.yaml
