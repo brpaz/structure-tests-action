@@ -1,14 +1,11 @@
 {
-  "name": "Devbox Remote Container",
-  "build": {
-    "dockerfile": "./Dockerfile",
-    "context": ".."
-  },
   "customizations": {
     "vscode": {
-      "settings": {},
-      "extensions": ["jetpack-io.devbox", "task.vscode-task"]
+      "extensions": [
+        "mkhl.direnv"
+      ]
     }
   },
-  "remoteUser": "devbox"
+  "image": "ghcr.io/cachix/devenv:latest",
+  "overrideCommand": false
 }

@@ -9,6 +9,8 @@ pre-commit:
   commands:
     lint:
       run: task lint
-  scripts:
-    "commitlint.sh":
-      runner: bash
+
+commit-msg:
+  commands:
+    lint-commit-msg:
+      run: commitlint

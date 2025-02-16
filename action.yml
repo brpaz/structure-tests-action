@@ -1,20 +1,21 @@
-name: 'Container Structure Tests'
+name: "Container Structure Tests"
 description: |
   Action that leverages Google´s Container Structure test
   to run unit tests on your container images'
-author: 'Bruno Paz'
+author: "Bruno Paz"
 inputs:
   image:
-    description: 'The Docker image to test'
+    description: "The Docker image to test"
     required: true
   configFile:
-    description: 'Path to the config file'
-    default: 'structure-tests.yaml'
+    description: "Path to the config file"
+    default: "structure-tests.yaml"
 runs:
-  using: 'docker'
-  image: 'Dockerfile'
+  using: "docker"
+  image: "Dockerfile"
   args:
     - ${{ inputs.image }}
+    - ${{ inputs.configFile }}
 branding:
-  icon: 'package'
-  color: 'blue'
+  icon: "package"
+  color: "blue"
